@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace ConsoleApp
 {
@@ -7,11 +8,20 @@ namespace ConsoleApp
         static void Main(string[] args)
         {
             MyFirstMethod();
-            SimpleMaths();
+            
+            PrintLine(SimpleMaths().ToString());
         }
 
-        private static void SimpleMaths()
+        private static void PrintLine(string stringToPrint)
         {
+            Console.WriteLine(stringToPrint);
+        }
+
+        private static int SimpleMaths()
+        {
+            int[] valuesToSummate = new int[] { 0, 5, 6, 4, 8, 9, 10 };
+            int sum = valuesToSummate.Sum();
+            return sum;
             //make ex here
         }
 
