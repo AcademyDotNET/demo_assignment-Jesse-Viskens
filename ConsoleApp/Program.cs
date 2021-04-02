@@ -3,12 +3,12 @@ using System.Linq;
 
 namespace ConsoleApp
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             MyFirstMethod();
-            
+
             PrintLine(SimpleMaths().ToString());
         }
 
@@ -22,7 +22,6 @@ namespace ConsoleApp
             int[] valuesToSummate = new int[] { 0, 5, 6, 4, 8, 9, 10 };
             int sum = valuesToSummate.Sum();
             return sum;
-            //make ex here
         }
 
         public static void MyFirstMethod()
