@@ -7,9 +7,19 @@ namespace ConsoleApp
     {
         private static void Main(string[] args)
         {
-            MyFirstMethod();
+            int[] valuesToSummate = new int[] { 0, 5, 6, 4, 8, 9, 10 };
 
-            PrintLine(SimpleMaths().ToString());
+            MyFirstMethod();
+            PrintLine(SimpleMaths(valuesToSummate).ToString());
+            UseForLoop(valuesToSummate);
+        }
+
+        private static void UseForLoop(int[] valuesToSummate)
+        {
+            for(int i =0; i <= valuesToSummate.Length; i++)
+            {
+                Console.WriteLine(valuesToSummate[i]);
+            }
         }
 
         private static void PrintLine(string stringToPrint)
@@ -17,9 +27,8 @@ namespace ConsoleApp
             Console.WriteLine(stringToPrint);
         }
 
-        private static int SimpleMaths()
+        private static int SimpleMaths(int[] valuesToSummate)
         {
-            int[] valuesToSummate = new int[] { 0, 5, 6, 4, 8, 9, 10 };
             int sum = valuesToSummate.Sum();
             return sum;
         }
