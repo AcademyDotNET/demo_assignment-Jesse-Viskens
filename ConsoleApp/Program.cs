@@ -17,6 +17,7 @@ namespace ConsoleApp
 
         private static void DoSomething()
         {
+            Console.WriteLine("tst");
             throw new NotImplementedException();
         }
 
