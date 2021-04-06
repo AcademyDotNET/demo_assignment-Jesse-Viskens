@@ -12,6 +12,12 @@ namespace ConsoleApp
             MyFirstMethod();
             PrintLine(SimpleMaths(valuesToSummate).ToString());
             UseForLoop(valuesToSummate);
+            DoSomething();
+        }
+
+        private static void DoSomething()
+        {
+            throw new NotImplementedException();
         }
 
         private static void UseForLoop(int[] valuesToSummate)
