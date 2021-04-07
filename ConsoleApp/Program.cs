@@ -20,6 +20,7 @@ namespace ConsoleApp
 
             DoSomethingElse(101);
             DoSomethingElse(500);
+            DoSomething();
         }
 
         private static void DoSomethingElse(int i)
