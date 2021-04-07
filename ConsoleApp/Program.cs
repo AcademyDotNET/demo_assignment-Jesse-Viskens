@@ -5,6 +5,10 @@ namespace ConsoleApp
 {
     internal class Program
     {
+        public static void MyFirstMethod()
+        {
+            throw new NotImplementedException();
+        }
         private static void Main(string[] args)
         {
             int[] valuesToSummate = new int[] { 0, 5, 6, 4, 8, 9, 10 };
@@ -13,6 +17,14 @@ namespace ConsoleApp
             PrintLine(SimpleMaths(valuesToSummate).ToString());
             UseForLoop(valuesToSummate);
             DoSomething();
+
+            DoSomethingElse(101);
+            DoSomethingElse(500);
+        }
+
+        private static void DoSomethingElse(int i)
+        {
+            Console.WriteLine(i);
         }
 
         private static void DoSomething()
@@ -23,8 +35,9 @@ namespace ConsoleApp
 
         private static void UseForLoop(int[] valuesToSummate)
         {
-            for(int i =0; i <= valuesToSummate.Length; i++)
+            for (int i = 0; i <= valuesToSummate.Length; i++)
             {
+
                 Console.WriteLine(valuesToSummate[i]);
             }
         }
@@ -40,9 +53,6 @@ namespace ConsoleApp
             return sum;
         }
 
-        public static void MyFirstMethod()
-        {
-            throw new NotImplementedException();
-        }
+
     }
 }
