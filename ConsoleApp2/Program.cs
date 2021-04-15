@@ -6,7 +6,9 @@ namespace ConsoleApp2
     {
         private static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            TemperatuurMeting eenMeting = new TemperatuurMeting();
+            eenMeting.Temperatuur = 3.4;
+            eenMeting.IsGeconfirmeerd = true;
         }
     }
 }
